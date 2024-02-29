@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.app-content {
+  min-height: 720px;
+}
+
 /* base styles */
 body {
   background: #070707;
@@ -20,6 +24,16 @@ main {
   @apply max-w-5xl my-12 mx-auto px-8;
 }
 
+@media (max-width: 767px) {
+  body {
+    margin: 0;
+  }
+}
+
+footer {
+  @apply flex justify-center mt-16
+}
+
 p>a {
   @apply text-primary underline;
 }
@@ -31,6 +45,17 @@ p {
 /* nav styles */
 nav {
   @apply pb-4 flex items-center justify-center gap-24 my-10 mx-auto;
+}
+
+@media (max-width: 567px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding-bottom: 1rem;
+    margin: 2.5rem auto 2.5rem auto;
+  }
 }
 
 nav a {
@@ -149,6 +174,24 @@ ul {
   @apply mb-3;
 }
 
+@media (max-width: 767px) {
+  .section-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .button-resume,
+  .social-links {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
 .section-about img:hover {
   cursor: pointer;
 }
@@ -190,6 +233,14 @@ ul {
 }
 
 /* ========= Projects Section ========= */
+
+.about-description {
+  letter-spacing: 0.6px;
+}
+
+.about-description p {
+  line-height: 1.6rem;
+}
 
 ::-webkit-scrollbar {
   width: 0.2rem;

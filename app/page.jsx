@@ -16,16 +16,17 @@ export default function Home() {
       <section className='section-about'>
         <div className='max-w-sm'>
           <h1>Hi there! I&apos;m Agung Darmawan</h1>
-          <p className='text-justify'>A software engineering graduate with 1 year experience as Front End Developer using Angular. Have a lot of passion for front end development using Angular and Next.js</p>
+          <p className='text-justify'>A software engineering graduate with 1 year experience as Front End Developer using Angular.
+            Have a lot of passion for software development mainly web application using Angular, Next.js, and Express Js</p>
         </div>
 
         <div className="flex-column min-w-44">
-          <div className='mb-6 flex justify-end'>
-            <Link href="/tickets">
+          <div className='mb-6 flex justify-end button-resume'>
+            <Link href="https://drive.google.com/uc?export=download&id=1wc9_ow7qL88CI6vVfTvmhXDb89ls1WPK" target='_blank'>
               <button className="btn-primary">View Resume</button>
             </Link>
           </div>
-          <div className='flex justify-end gap-6'>
+          <div className='flex justify-end gap-6 social-links'>
             <Link href='https://www.instagram.com/agungdarmawan_11/' target='_blank'><Image className='w-6 h-6' src={instagramIcon} alt='instagram' /></Link>
             <Link href='https://www.linkedin.com/in/agungdarmawan11/' target='_blank'><Image className='w-6 h-6' src={linkedinIcon} alt='linkedin' /></Link>
             <Link href='https://github.com/scorxi' target='_blank'><Image className='w-6 h-6' src={githubIcon} alt='github' /></Link>
