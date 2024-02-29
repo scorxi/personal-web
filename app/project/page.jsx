@@ -85,7 +85,7 @@ const NovemberXi = () => {
             <div className='card-header'>
                 <span>novemberxi.dev</span>
                 <div className='flex flex-row justify-between items-center'>
-                    <Link href='https://my-personalnotes.netlify.app' target='_blank'>Visit Website</Link>
+                    <Link href='https://novemberxi.tech/' target='_blank'>Visit Website</Link>
                     <Image href='' src={arrowUpDiagonal} alt='Visit Website' className='w-7 h-7 cursor-pointer' />
                 </div>
             </div>
