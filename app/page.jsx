@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
-import instagramIcon from '../assets/instagram.ico'
+import instagramIcon from '../assets/Instagram.ico'
 import linkedinIcon from '../assets/linkedin.ico'
 import githubIcon from '../assets/github.ico'
 import emailIcon from '../assets/email.ico'
