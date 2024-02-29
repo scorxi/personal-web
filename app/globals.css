@@ -2,26 +2,203 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/* base styles */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #070707;
+  @apply text-primary m-8;
+}
+
+h1 {
+  @apply font-bold text-primary mb-3 text-3xl;
+}
+
+h2 {
+  @apply font-bold text-primary mb-3 text-xl;
+}
+
+main {
+  @apply max-w-5xl my-12 mx-auto px-8;
+}
+
+p>a {
+  @apply text-primary underline;
+}
+
+p {
+  @apply text-white mb-3;
+}
+
+/* nav styles */
+nav {
+  @apply pb-4 flex items-center justify-center gap-24 my-10 mx-auto;
+}
+
+nav a {
+  border-bottom: 1px solid #070707;
+  @apply text-white px-3 py-3;
+}
+
+nav a:hover {
+  @apply text-primary;
+}
+
+nav .active {
+  border-bottom: 1px solid #38AECC;
+  @apply text-primary;
+}
+
+/* button styles */
+button {
+  border: 0.5px solid #070707;
+  transition: ease-in 150ms;
+  @apply px-3 py-2 rounded-sm flex justify-between items-center gap-2 text-sm;
+}
+
+button:hover {
+  border: 0.5px solid #38AECC;
+  @apply bg-primary_bg text-white border-primary;
+}
+
+.btn-primary {
+  @apply bg-primary text-primary_bg;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-900;
+}
+
+/* form styles */
+form {
+  @apply py-4 px-7 bg-primary bg-opacity-5 rounded-md block mx-auto min-w-fit w-1/4;
+}
+
+form label {
+  @apply block;
+}
+
+form input,
+form textarea,
+form select {
+  @apply block mt-2 my-4 px-2 py-1 rounded-sm w-full;
+}
+
+form button {
+  @apply block mx-auto;
+}
+
+/* feedback styles */
+.error {
+  @apply border-2 border-red-500 bg-red-300 text-red-800 py-1 px-2 rounded-sm block max-w-fit my-4 mx-auto;
+}
+
+/* card styles */
+.card {
+  background: linear-gradient(#1D181F, #1E1F21);
+  @apply shadow-sm rounded-md py-3 px-4 my-4 mb-6;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-tech-stack {
+  border: 1px solid #070707;
+  border-radius: 12px;
+  @apply text-primary bg-primary_bg py-1 px-2;
+}
+
+.card h3 {
+  @apply font-bold text-grey_secondary text-sm mb-0;
+}
+
+.card p,
+ul {
+  font-size: 1rem;
+  @apply my-4 leading-6 text-justify;
+}
+
+/* pill styles */
+.pill {
+  @apply py-1 px-2 mt-3 inline-block text-xs font-semibold;
+}
+
+.pill.high {
+  @apply bg-red-300 text-red-600;
+}
+
+.pill.medium {
+  @apply bg-blue-300 text-blue-600;
+}
+
+.pill.low {
+  @apply bg-emerald-300 text-emerald-600;
+}
+
+.card .pill {
+  @apply absolute bottom-0 right-0 rounded-tl-md;
+}
+
+/* ========= Home Section ========= */
+.section-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @apply mb-3;
+}
+
+.section-about img:hover {
+  cursor: pointer;
+}
+
+/* Experience Section */
+.expand-work-details {
+  font-size: 0.875rem;
+  color: #38AECC;
+}
+
+.work-details ul {
+  list-style-type: disc;
+  padding-left: 24px;
+  color: #FFFDFD;
+}
+
+.project-details ul {
+  list-style-type: disc;
+  padding-left: 24px;
+  color: #FFFDFD;
+}
+
+/* ========= Home Section ========= */
+
+/* ========= Projects Section ========= */
+.project-link {
+  border-bottom: 1px solid #070707;
+  @apply text-white px-2 py-1;
+}
+
+.project-link:hover {
+  cursor: pointer;
+  @apply text-primary;
+}
+
+.project-link-active {
+  border-bottom: 1px solid #38AECC;
+  @apply text-primary;
+}
+
+/* ========= Projects Section ========= */
+
+::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #070707;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #38AECC;
 }
