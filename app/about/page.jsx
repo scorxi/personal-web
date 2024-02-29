@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 
-import profilePhoto from "./../../assets/profile-photo.png"
+import profilePhoto from "../../assets/profile-photo.png"
 
 export default function About() {
     return (

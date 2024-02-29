@@ -4,8 +4,8 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import arrowUp from './../../assets/arrow-up.ico'
-import arrowUpDiagonal from './../../assets/arrow-up-diagonal.ico'
+import arrowUp from '../../assets/arrow-up.ico'
+import arrowUpDiagonal from '../../assets/arrow-up-diagonal.ico'
 
 export default function Project() {
     const [activeButton, setActiveButton] = useState('work') // work as defaults

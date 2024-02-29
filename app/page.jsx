@@ -4,11 +4,11 @@ import { useState } from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
-import instagramIcon from './../assets/instagram.ico'
-import linkedinIcon from './../assets/linkedin.ico'
-import githubIcon from './../assets/github.ico'
-import emailIcon from './../assets/email.ico'
-import arrowUp from './../assets/arrow-up.ico'
+import instagramIcon from '../assets/instagram.ico'
+import linkedinIcon from '../assets/linkedin.ico'
+import githubIcon from '../assets/github.ico'
+import emailIcon from '../assets/email.ico'
+import arrowUp from '../assets/arrow-up.ico'
 
 export default function Home() {
   return (
