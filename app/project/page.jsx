@@ -83,7 +83,7 @@ const NovemberXi = () => {
     return (
         <div className='card'>
             <div className='card-header'>
-                <span>novemberxi.dev</span>
+                <span>novemberxi.tech</span>
                 <div className='flex flex-row justify-between items-center'>
                     <Link href='https://novemberxi.tech/' target='_blank'>Visit Website</Link>
                     <Image href='' src={arrowUpDiagonal} alt='Visit Website' className='w-7 h-7 cursor-pointer' />
