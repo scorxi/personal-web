@@ -90,7 +90,7 @@ const NovemberXi = () => {
                 </div>
             </div>
             <p>A personal web to keep track on my journey in tech. Will be regulary updated and enhanced. Blog pages coming soon!</p>
-            <span className='card-tech-stack'>Next.js | Tailwind CSS | Javascript</span> <Link className='mx-2' href='https://github.com/scorxi/my-personal-notes' target='_blank'>Source Code</Link>
+            <span className='card-tech-stack'>Next.js | Tailwind CSS | Javascript</span> <Link className='mx-2' href='https://github.com/scorxi/personal-web' target='_blank'>Source Code</Link>
         </div>
     )
 }
