@@ -75,6 +75,7 @@ const PersonalProjects = () => {
             <SrikandiFC />
             <PersonalNotes />
             <BookShelfApps />
+            <TodoDevRank />
         </div>
     );
 }
@@ -123,6 +124,22 @@ const BookShelfApps = () => {
             </div>
             <p>Simple BookShelf App with the use of LocalStorage supported by web browser so that the app doesn’t need an external database. The client website is able to add book into two folders. Equipped with search feature.</p>
             <span className='card-tech-stack'>HTML | CSS | Javascript | LocalStorage</span> <Link className='mx-2' href='https://github.com/scorxi/bookshelfapps_1' target='_blank'>Source Code</Link>
+        </div>
+    )
+}
+
+const TodoDevRank = () => {
+    return (
+        <div className='card'>
+            <div className='card-header'>
+                <span>Todo List App | Code challenge by <a href='https://gethired.id' target='_blank'>gethired.id</a></span>
+                <div className='flex flex-row justify-between items-center'>
+                    <Link href='https://todo-devrank-agung.vercel.app/' target='_blank'>Visit Website</Link>
+                    <Image href='' src={arrowUpDiagonal} alt='Visit Website' className='w-7 h-7 cursor-pointer' />
+                </div>
+            </div>
+            <p>Todo List App. Front end code challenge by gethired.id</p>
+            <span className='card-tech-stack'>Angular | CSS | Typescript</span> <Link className='mx-2' href='https://github.com/scorxi/todo-devrank' target='_blank'>Source Code</Link>
         </div>
     )
 }

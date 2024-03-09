@@ -22,7 +22,7 @@ export default function Home() {
 
         <div className="flex-column min-w-44">
           <div className='mb-6 flex justify-end button-resume'>
-            <Link href="https://drive.google.com/uc?export=download&id=1wc9_ow7qL88CI6vVfTvmhXDb89ls1WPK" target='_blank'>
+            <Link href="https://drive.google.com/drive/folders/16dCD0a_ztuz5zj4aPrWcTHPT-hecC6Wu?usp=sharing" target='_blank'>
               <button className="btn-primary">View Resume</button>
             </Link>
           </div>
