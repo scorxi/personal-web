@@ -73,8 +73,8 @@ const ExperienceBCA = () => {
           <p>Work Achievements :</p>
           <ul>
             <li>Manage to increase unit/component test coverage from 40% to 88% to ensure the feature are eligible for testing in UAT environment.</li>
-            <li>Manage to migrate existing HTML, CSS -Bootstrap design to in-house library of components on one of the transfer feature.</li>
-            <li>Contributing and being part of the prime team that handled the main feature of the large internet banking app.</li>
+            <li>Manage to migrate existing HTML, CSS -Bootstrap design to in-house library to ensure reliability and maintain reusable components.</li>
+            <li>Contributing and being part of the prime team consists of business, tech, tester, and other stakeholders that handle the main feature of the confidential large internet banking app and I&apos;ve worked on 10-12 project cycles that eventually meet project requirements.</li>
           </ul>
         </div>
       }
